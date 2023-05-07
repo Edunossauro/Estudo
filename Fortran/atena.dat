@@ -1,0 +1,16 @@
+Silverfrost 64-bit exception report on D:\Programação\Fortran\Fibonaccatino.exe  Mon Jul 25 22:06:58 2022
+
+
+Reference to undefined variable, array element or function result (/UNDEF) at address 401dda
+
+Within file Fibonaccatino.exe
+in PRIMO in line 28, at address f3
+in FIBONACCIPRIMO in line 18, at address 462
+
+
+RAX = 0000000000000070   RBX = 000000000240fb88   RCX = 0000000000000000   RDX = 000000000240fe58
+RBP = 0000000000400000   RSI = 0000000000000000   RDI = 0000000009fbb820   RSP = 000000000240fb20
+R8  = a0a0a0a0a0a0a0a0   R9  = 0000000000000000   R10 = 0000000000401da6   R11 = ffffffffffffffff
+R12 = 0000000000000000   R13 = 0000000000406150   R14 = 000000000240fe58   R15 = 0000000080808080
+
+401dda) int       9

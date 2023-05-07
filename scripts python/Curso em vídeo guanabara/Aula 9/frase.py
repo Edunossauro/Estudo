@@ -1,0 +1,6 @@
+frase=('Tatu pa tu')
+print(frase)
+print(frase[3])
+print(frase[2:])
+print(frase.title())
+print(frase.upper())

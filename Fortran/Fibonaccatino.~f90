@@ -1,0 +1,46 @@
+program fibonacciprimo
+integer n,n1,n2,n3,i,io,primo,numero
+open(unit=20,file='morfeu.dat')
+print*, ('Quantas casas voce quer calcular?')
+read (*,*) n
+print*,'serao calculadas', n, 'casas'
+n1=0
+n2=1
+print *, 'Numeros fibonacci'
+do i=1,n
+n3=n1+n2
+n1=n2
+n2=n3
+enddo
+close(20)
+open(30,file='morfeu.dat')
+do 
+ read(30,*,iostat=io) numero
+ if (io/=0) exit
+ if (primo(numero)==0) then
+  print*, numero
+ end if
+enddo
+close(30)
+end program 
+
+integer function primo(number)
+integer, intent(in) :: number
+integer contador 
+contador=0
+do i=2,(number/2)
+if (mod(number,i)==0 .and. contador==0) then 
+contador=contador+1
+end if
+enddo
+print *,'contador=',contador
+primo=contador
+end function 
+
+
+
+
+
+
+
+

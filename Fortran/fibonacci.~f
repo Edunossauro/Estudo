@@ -1,0 +1,12 @@
+program sequencia
+implicit none
+integer soma, ix
+write(*,*)'Esse programa serve para calcular a sequˆncia de fibonacci, escreva quantas casas vocˆ quer:(exceto o 0)"
+read(*,*) ix
+soma=1
+do=1,ix
+soma=soma+soma
+enddo
+write(*,*)' A soma de', ix , 'casas de fibonacci ‚:', soma
+stop
+end

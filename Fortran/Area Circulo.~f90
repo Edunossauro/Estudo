@@ -1,0 +1,8 @@
+Program Circle
+real r, area
+write(*,*) 'Diz o raio a¡ do c¡rculo meu parceiro:'
+read(*,*)r
+area=3.1415*r*r
+write(*,*)'area='area
+stop
+end

@@ -1,0 +1,1 @@
+# Escreva um programa que leia um número inteiro e converta em 1-Binário 2-octal 3-Hexadecimal
